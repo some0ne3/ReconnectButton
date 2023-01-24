@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "reconnectbutton",
+  "version": "${version}",
+  "name": "ReconnectButton",
+  "description": "Allows player to reconnect after losing connection to multiplayer server.",
+  "authors": ["some0ne3"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["me.someone3.reconnectbutton.ReconnectButtonMod"],
+    "main": []
+  },
+  "mixins": [
+    "reconnectbutton.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
