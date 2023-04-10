@@ -33,11 +33,11 @@ public class DisconnectedScreensMixin extends Screen {
             return;
         }
         ButtonWidget backButton = (ButtonWidget) children().get(0);
-        reconnectButton.setX(backButton.getX());
-        reconnectButton.setY(backButton.getY());
+        reconnectButton.x = backButton.x;
+        reconnectButton.y = backButton.y;
         reconnectButton.setWidth(backButton.getWidth());
         addDrawableChild(reconnectButton);
-        backButton.setY(backButton.getY() + backButton.getHeight() + 4);
+        backButton.y = (backButton.y + backButton.getHeight() + 4);
     }
 
     private void manualReconnect() {
